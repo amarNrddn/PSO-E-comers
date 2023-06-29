@@ -1,0 +1,119 @@
+.cart {
+    width: 40%;
+    height: 90vh;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__cart-list {
+    max-height: 70%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+}
+
+.cart-item__image {
+    width: 50px;
+    position: relative;
+    margin-right: 6px;
+}
+
+.product-img {
+    object-fit: contain;
+}
+
+.cart-item__des {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cart-item__des > p {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cart-item__action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    width: 35%;
+    margin-left: auto;
+}
+
+.cart-item__action > button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.cart-item__action > button:hover {
+    filter: brightness(130%);
+}
+
+.cart_checout {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.total_price,
+.pay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.pay > input {
+    border: 2px solid var(--color-white-gray);
+    outline: none;
+    padding: 6px 6px 6px 14px;
+    border-radius: 24px;
+    width: 70%;
+}
+
+.cart_checout > button {
+    height: 40px;
+    background-color: var(--color-blue);
+    outline: none;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.cart_checout > button:hover{
+    filter: brightness(130%);
+}
+
+.cart_checout > button:disabled {
+    filter: brightness(50%);
+    cursor: default;
+}
